@@ -1,26 +1,45 @@
 * {
     padding: 0;
-    margin: 0;
-    
-    
+    margin: 0;    
 }
 
 body {
-    font-family: 
+    font-family: "Libre Caslon Text", serif;
     background-color: #e4e4e4;
+    color: #263238
+
 
 }
-
 
 
 h1 {
     font-family: "Libre Caslon Display", serif;
     font-weight: 500;
     font-style: bold;
+}
     
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #cfd8dc
+}    
+
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
+nav li {
+    padding-left: 1rem;
+}
 
+nav a {
+    text-decoration: none;
+    color: #0d47a1
+}
 
 
 .top_nav {
@@ -48,8 +67,8 @@ h1 {
 .top_nav a.active {
     background-color: blue;
     color: white;
-}
 
+}
 
 .libre-caslon-display-regular {
     font-family: "Libre Caslon Display", serif;
@@ -57,3 +76,56 @@ h1 {
     font-style: normal;
     
 }
+
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  
+  .libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+  /* Small device support */
+  @media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    nav li {
+        padding: 0.5rem 0;
+    }
+
+
+
+  }
+
