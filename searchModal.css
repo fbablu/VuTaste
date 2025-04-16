@@ -1,0 +1,146 @@
+/* Search Modal Trigger Button */
+.trigger-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  border: 1px solid #777777;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #4b5563;
+  cursor: pointer;
+  transition:
+    border 0.2s ease,
+    color 0.2s ease;
+}
+
+.trigger-btn:hover {
+  border-color: #555;
+  color: #1c1c1c;
+}
+
+.shortcut {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+/* Modal Base */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  font-family: "Libre Caslon Text", serif;
+}
+
+/* Dark Overlay */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Container */
+.modal-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 680px;
+  padding: 1rem;
+}
+
+/* Modal Card */
+.modal-content {
+  background: white;
+  border: 1px solid #777;
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Header Row */
+.modal-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-header input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background: transparent;
+  color: #1c1c1c;
+}
+
+.modal-header .material-icons {
+  color: #999;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #ddd;
+}
+
+/* Modal Body */
+.modal-body {
+  max-height: 440px;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+/* Empty Message */
+.empty-state {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Result Item Styles */
+.result-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.result-item:hover {
+  background-color: #f3f4f6;
+}
+
+.result-item-title {
+  font-size: 0.9rem;
+  color: #1c1c1c;
+}
+
+.result-item-desc {
+  font-size: 0.75rem;
+  color: #777;
+}

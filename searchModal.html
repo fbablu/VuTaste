@@ -1,0 +1,33 @@
+<!-- Trigger Button -->
+<div class="search-container">
+  <button id="search-btn" class="trigger-btn">
+    <span class="material-icons">search</span>
+    <span>Search...</span>
+    <div class="shortcut">⌘K</div>
+  </button>
+</div>
+
+<!-- Modal -->
+<div id="search-modal" class="modal hidden">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-icons">search</span>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search..."
+          autofocus
+        />
+        <button id="close-btn" class="close-btn">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="divider"></div>
+      <div class="modal-body" id="results">
+        <div class="empty-state">Start typing to search...</div>
+      </div>
+    </div>
+  </div>
+</div>

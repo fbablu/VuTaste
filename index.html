@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="searchModal.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VuTaste</title>
     <link rel="stylesheet" href="styles.css" />
@@ -15,6 +21,20 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
+
+  <script type="module">
+    async function loadSearchModal() {
+      const response = await fetch("searchModal.html");
+      const html = await response.text();
+      document.getElementById("search-slot").innerHTML = html;
+
+      const module = await import("./searchModal.js");
+      module.initializeSearchModal();
+    }
+
+    loadSearchModal();
+  </script>
+
   <body>
     <nav>
       <h1>VuTaste</h1>
@@ -24,6 +44,7 @@
         <li><a href="#nutrition">Nutrition</a></li>
         <li><a href="#about">About</a></li>
       </ul>
+      <div id="search-slot"></div>
     </nav>
     <section class="restaurant-cards"></section>
 
